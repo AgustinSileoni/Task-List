@@ -19,7 +19,7 @@ export const TASKS:Task[] = [
         text: "Organizar la semana",
         day: "Domingo 11 de diciembre a las 22:00",
         reminder: true
-    }
+    },
     {
         id:4,
         text: "Comprar la carne",
