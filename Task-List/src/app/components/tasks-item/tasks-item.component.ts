@@ -1,7 +1,7 @@
-import { Component, Input} from '@angular/core';
-import { Task } from 'src/app/Task';
-import { TASKS } from 'src/app/mock-tasks';
+import { Component, Input, OnInit} from '@angular/core';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { TaskService } from 'src/app/service/task.service';
+import { Task } from 'src/app/Task';
 
 @Component({
   selector: 'app-tasks-item',
@@ -10,7 +10,13 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 })
 export class TasksItemComponent {
 
-  @Input() task:Task= TASKS[0] ;
+  constructor(
+    private taskService : TaskService //Inicializo el servicio
+  ){}
+
+//  @Input() task:Task= (this.taskService.getTasks() );
+  @Input() task:Task={ id:0,text:"",day:"",reminder: false};
+
   faTimes = faTimes;
 
 }
