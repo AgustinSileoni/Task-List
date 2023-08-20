@@ -5,6 +5,12 @@
       "text": "Seguir investigando sobre Bootstrap",
       "day": "Agosto 30 a las 08:00",
       "reminder": false
+    },
+    {
+      "id": 3,
+      "text": "Nuev",
+      "day": "Ahora",
+      "reminder": false
     }
   ]
 }
